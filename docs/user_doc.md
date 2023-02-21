@@ -45,9 +45,17 @@ npm install
 
 ### Kulcs generálás
 
+Beállítás fájlt kell létrehozni .env néven. Van egy minta állomány .env.example néven.
+
+Készítsünk másolatot a .env.example állomnyról .env néven.
+
+Generáljuk le az alkalmazás kulcsát:
+
 ```cmd
 php artisan key:generate
 ```
+
+A kulcs a .env állományba íródik.
 
 ### Adatbázis SQLite-tal
 
@@ -55,7 +63,19 @@ Hozzunk létre egy állományt database.sqlite néven a database könyvtárban:
 
 * database/database.sqlite
 
-Ha kész a fájl kezdjük el a migrációt, ami létrehozza az adatbázis tábláit:
+Szerkesszük a .env állományt. Ehhez hasonlóan javítsuk az adatbázis részt:
+
+```ini
+DB_CONNECTION=sqlite
+# DB_CONNECTION=mysql
+# DB_HOST=127.0.0.1
+# DB_PORT=3306
+# DB_DATABASE=laravel
+# DB_USERNAME=root
+# DB_PASSWORD=
+```
+
+Kezdjük el a migrációt, ami létrehozza az adatbázis tábláit:
 
 ```cmd
 php artisan migrate
