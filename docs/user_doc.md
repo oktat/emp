@@ -2,6 +2,16 @@
 
 Felhasználói dokumentáció
 
+## Feltételek
+
+A következő parancsokra van szükség a beüzemeléshez:
+
+* composer
+* npm
+* php
+
+A composer önálló alkalmazás. Az npm a NodeJS része. A PHP benne van az XAMPP csomagban.
+
 ## Beüzemelés
 
 ### Kezdés
