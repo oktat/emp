@@ -1,6 +1,4 @@
-# emp
-
-Felhasználói dokumentáció
+# emp felhasználói dokumentáció
 
 ## Feltételek
 
