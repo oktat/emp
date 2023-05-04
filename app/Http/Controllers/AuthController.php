@@ -35,7 +35,7 @@ class AuthController extends Controller
             $success[ "name" ] = $authUser->name; 
             return response( $success); 
         }else {
-            return response()->json( ["msg" => "Hiba! A bejelentkezés sikertelen"]);
+            return response()->json( ["msg" => "Hiba! A bejelentkezés sikertelen"], 401);
         }
     }
     public function logout( Request $request ) {        
