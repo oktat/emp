@@ -133,6 +133,19 @@ Visszakapunk egy tokent és egy nevet. Például:
 
 A token elején szerepl a sorszáma és egy "|" karakter. Token alapú azonosításhoz ezt is vissza küldhetjük, vagy el hagyhatjuk.
 
+### Kijelentkezés
+
+Kijelentkezéshez jelenleg nem szükséges jelszó:
+
+```json
+{
+    "name": "janos",
+    "tokenId": 19
+}
+```
+
+De szükséges a név és a token azonosító
+
 ### Dolgozók kezelés
 
 #### Lekérdezés
